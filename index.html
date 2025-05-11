@@ -1,30 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <meta name="description" content="Aurélien Sabouret, ostéopathe D.O. à Caen. Spécialiste en douleurs dorsales, suivi sportif, et troubles posturaux. Consultations sur rendez-vous au centre-ville de Caen.">
+    <meta name="keywords" content="ostéopathe, Caen, douleur dos, ostéopathie, mal de dos, suivi sportif, posture">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Aurélien Sabouret">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.osteopathe-caen-sabouret.fr/">
+    <meta property="og:title" content="Aurélien Sabouret | Ostéopathe D.O. à Caen">
+    <meta property="og:description" content="Ostéopathe diplômé à Caen, spécialiste en douleurs dorsales et suivi sportif. Prenez rendez-vous au 02.31.XX.XX.XX">
+    <meta property="og:image" content="https://www.osteopathe-caen-sabouret.fr/images/cabinet-osteopathie-caen.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.osteopathe-caen-sabouret.fr/">
+    <meta property="twitter:title" content="Aurélien Sabouret | Ostéopathe D.O. à Caen">
+    <meta property="twitter:description" content="Ostéopathe diplômé à Caen, spécialiste en douleurs dorsales et suivi sportif. Prenez rendez-vous au 02.31.XX.XX.XX">
+    <meta property="twitter:image" content="https://www.osteopathe-caen-sabouret.fr/images/cabinet-osteopathie-caen.jpg">
+    
+    <title>Aurélien Sabouret | Ostéopathe D.O. à Caen | Douleurs dorsales, Suivi sportif</title>
+    
+    <link rel="canonical" href="https://www.osteopathe-caen-sabouret.fr/">
+    <link rel="icon" href="favicon.ico">
+    
+     <!-- CSS -->
+     <link rel="stylesheet" href="main.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Aurélien Sabouret - Ostéopathe D.O.",
+        "image": "https://www.osteopathe-caen-sabouret.fr/images/cabinet-osteopathie-caen.jpg",
+        "@id": "https://www.osteopathe-caen-sabouret.fr",
+        "url": "https://www.osteopathe-caen-sabouret.fr",
+        "telephone": "+33231XXXXXX",
+        "priceRange": "€€",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "15 rue de la Liberté",
+            "addressLocality": "Caen",
+            "postalCode": "14000",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.182863,
+            "longitude": -0.370679
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "12:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/osteopathemariedupont",
+            "https://www.doctolib.fr/osteopathe/caen/marie-dupont"
+        ]
+    }
+    </script>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Aurélien Sabouret | Ostéopathe D.O.</div>
+                <div class="contact-header">
+                    <span class="phone-number">02.31.XX.XX.XX</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Ostéopathe à Caen</h1>
+                <p>Aurélien Sabouret, Ostéopathe D.O. diplômée, vous accueille dans son cabinet au centre-ville de Caen pour soulager vos douleurs et améliorer votre bien-être.</p>
+                <a href="tel:+33231XXXXXX" class="cta-button">Prendre rendez-vous</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2>À propos</h2>
+                <p>Diplômée de l'Institut Supérieur d'Ostéopathie de Paris, je pratique une ostéopathie douce et adaptée à chaque patient. Mon approche globale vise à identifier et traiter les causes de vos douleurs, et non uniquement les symptômes.</p>
+                <p>Installée à Caen depuis 2015, je reçois des patients de tous âges : nourrissons, enfants, adultes, femmes enceintes, sportifs et seniors. Chaque consultation est personnalisée selon vos besoins spécifiques.</p>
+                <p>L'ostéopathie est une thérapie manuelle qui considère le corps dans son ensemble. Elle permet de soulager de nombreux troubles fonctionnels en restaurant la mobilité des tissus et des articulations.</p>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2>Mes services</h2>
+                <p>Je propose des consultations d'ostéopathie pour diverses problématiques :</p>
+                
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3>Douleurs dorsales</h3>
+                        <p>Traitement des lombalgies, cervicalgies, sciatiques et autres douleurs vertébrales aiguës ou chroniques.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>Suivi sportif</h3>
+                        <p>Accompagnement des sportifs pour la prévention des blessures, l'optimisation des performances et la récupération après effort.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>Troubles posturaux</h3>
+                        <p>Correction des déséquilibres posturaux liés au travail, aux activités quotidiennes ou aux mauvaises habitudes.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>Ostéopathie pédiatrique</h3>
+                        <p>Traitement adapté aux nourrissons et enfants pour les troubles du sommeil, coliques, plagiocéphalies, etc.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>Suivi de grossesse</h3>
+                        <p>Accompagnement des femmes enceintes pour soulager les douleurs liées à la grossesse et préparer le corps à l'accouchement.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>Troubles ORL et digestifs</h3>
+                        <p>Traitement des vertiges, acouphènes, sinusites, troubles digestifs fonctionnels, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact et accès</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Coordonnées</h3>
+                        <p><strong>Adresse :</strong> 15 rue de la Liberté, 14000 Caen</p>
+                        <p><strong>Téléphone :</strong> 02.31.XX.XX.XX</p>
+                        <p><strong>Email :</strong> contact@osteopathe-caen-sabouret.fr</p>
+                        <p><strong>Accès :</strong> Parking à proximité, accessible aux personnes à mobilité réduite</p>
+                        <p>Consultations sur rendez-vous uniquement</p>
+                        <p>Conventionnée avec certaines mutuelles</p>
+                    </div>
+                    
+                    <div class="hours">
+                        <h3>Horaires d'ouverture</h3>
+                        <ul class="hours-list">
+                            <li><span>Lundi</span> <span>9h - 19h</span></li>
+                            <li><span>Mardi</span> <span>9h - 19h</span></li>
+                            <li><span>Mercredi</span> <span>9h - 19h</span></li>
+                            <li><span>Jeudi</span> <span>9h - 19h</span></li>
+                            <li><span>Vendredi</span> <span>9h - 19h</span></li>
+                            <li><span>Samedi</span> <span>9h - 12h</span></li>
+                            <li><span>Dimanche</span> <span>Fermé</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map" style="margin-top: 2rem;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20700.59238610743!2d-0.3897382!3d49.1828634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bd4c04c933%3A0x3da5749f30d00cc0!2sCaen!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Aurélien Sabouret - Ostéopathe D.O. | 15 rue de la Liberté, 14000 Caen</p>
+            <p>SIRET : 123 456 789 00012 | Diplômée de l'Institut Supérieur d'Ostéopathie de Paris</p>
+            <p>&copy; 2023 Cabinet d'Ostéopathie Aurélien Sabouret - Tous droits réservés</p>
+        </div>
+    </footer>
 </body>
 </html>
