@@ -94,7 +94,7 @@
 
     <main>
         <section class="hero">
-            <img src="https://placehold.co/1920x1080/e8f4f4/3a7d7e?text=Cabinet+d'Ostéopathie" alt="Cabinet d'ostéopathie à Caen" class="hero-image">
+            <img src="pexels-ryutaro-5473223.jpg" alt="Cabinet d'ostéopathie à Caen" class="hero-image">
             <div class="container hero-content">
                 <h1>Ostéopathe à Caen</h1>
                 <p>Marie Dupont, Ostéopathe D.O. diplômée, vous accueille dans son cabinet au centre-ville de Caen pour soulager vos douleurs et améliorer votre bien-être.</p>
@@ -113,7 +113,7 @@
                         <p>L'ostéopathie est une thérapie manuelle qui considère le corps dans son ensemble. Elle permet de soulager de nombreux troubles fonctionnels en restaurant la mobilité des tissus et des articulations.</p>
                     </div>
                     <div class="about-image">
-                        <img src="https://placehold.co/600x800/e8f4f4/3a7d7e?text=Marie+Dupont" alt="Marie Dupont, Ostéopathe à Caen">
+                        <img src="pexels-cottonbro-3998008.jpg" alt="Marie Dupont, Ostéopathe à Caen">
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                 <div class="service-list">
                     <div class="service-item">
                         <div class="service-image">
-                            <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Douleurs+dorsales" alt="Traitement des douleurs dorsales">
+                            <img src="pexels-karolina-grabowska-4506169.jpg" alt="Traitement des douleurs dorsales">
                         </div>
                         <h3>Douleurs dorsales</h3>
                         <p>Traitement des lombalgies, cervicalgies, sciatiques et autres douleurs vertébrales aiguës ou chroniques.</p>
@@ -135,7 +135,7 @@
                     
                     <div class="service-item">
                         <div class="service-image">
-                            <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Suivi+sportif" alt="Suivi ostéopathique pour sportifs">
+                            <img src="pexels-karolina-grabowska-4506078.jpg" alt="Suivi ostéopathique pour sportifs">
                         </div>
                         <h3>Suivi sportif</h3>
                         <p>Accompagnement des sportifs pour la prévention des blessures, l'optimisation des performances et la récupération après effort.</p>
@@ -143,7 +143,7 @@
                     
                     <div class="service-item">
                         <div class="service-image">
-                            <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Troubles+posturaux" alt="Correction des troubles posturaux">
+                            <img src="pexels-karolina-grabowska-4506110.jpg" alt="Correction des troubles posturaux">
                         </div>
                         <h3>Troubles posturaux</h3>
                         <p>Correction des déséquilibres posturaux liés au travail, aux activités quotidiennes ou aux mauvaises habitudes.</p>
@@ -155,22 +155,6 @@
                         </div>
                         <h3>Ostéopathie pédiatrique</h3>
                         <p>Traitement adapté aux nourrissons et enfants pour les troubles du sommeil, coliques, plagiocéphalies, etc.</p>
-                    </div>
-                    
-                    <div class="service-item">
-                        <div class="service-image">
-                            <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Suivi+de+grossesse" alt="Ostéopathie pour femmes enceintes">
-                        </div>
-                        <h3>Suivi de grossesse</h3>
-                        <p>Accompagnement des femmes enceintes pour soulager les douleurs liées à la grossesse et préparer le corps à l'accouchement.</p>
-                    </div>
-                    
-                    <div class="service-item">
-                        <div class="service-image">
-                            <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Troubles+ORL" alt="Traitement des troubles ORL et digestifs">
-                        </div>
-                        <h3>Troubles ORL et digestifs</h3>
-                        <p>Traitement des vertiges, acouphènes, sinusites, troubles digestifs fonctionnels, etc.</p>
                     </div>
                 </div>
             </div>
@@ -265,13 +249,13 @@
                 <h3 style="margin-top: 2rem;">Mon cabinet</h3>
                 <div class="cabinet-photos">
                     <div class="cabinet-photo">
-                        <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Salle+d'attente" alt="Salle d'attente du cabinet d'ostéopathie">
+                        <img src="waiting-room-548136_1280.jpg" alt="Salle d'attente du cabinet d'ostéopathie" onclick="openModal(this.src)">
                     </div>
                     <div class="cabinet-photo">
-                        <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Salle+de+consultation" alt="Salle de consultation d'ostéopathie">
+                        <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Salle+de+consultation" alt="Salle de consultation d'ostéopathie" onclick="openModal(this.src)">
                     </div>
                     <div class="cabinet-photo">
-                        <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Entrée+du+cabinet" alt="Entrée du cabinet d'ostéopathie à Caen">
+                        <img src="https://placehold.co/600x400/e8f4f4/3a7d7e?text=Entrée+du+cabinet" alt="Entrée du cabinet d'ostéopathie à Caen" onclick="openModal(this.src)">
                     </div>
                 </div>
                 
@@ -281,6 +265,14 @@
             </div>
         </section>
     </main>
+
+    <!-- Modal pour l'image agrandie -->
+    <div class="modal" id="imageModal">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="index2.js"></script>
 
     <footer>
         <div class="footer-content">
