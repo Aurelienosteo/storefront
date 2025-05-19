@@ -30,6 +30,10 @@
     
      <!-- CSS -->
      <link rel="stylesheet" href="main.css">
+
+     <!-- CSS and JS optimization -->
+     <link rel="preload" href="main.css" as="style" />
+     <link rel="preload" href="main.js" as="script" />
     
     <!-- Fonts optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,7 +131,7 @@
                         <p>L'ostéopathie est une thérapie manuelle qui considère le corps dans son ensemble. Elle permet de soulager de nombreux troubles fonctionnels en restaurant la mobilité des tissus et des articulations.</p>
                     </div>
                     <div class="about-image">
-                        <img src="aurel.webp" alt="Aurélien Sabouret, Ostéopathe à Caen" width="973" height="1600">
+                        <img src="aurel.webp" alt="Aurélien Sabouret, Ostéopathe à Caen" width="973" height="1600" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -249,7 +253,7 @@
         <img class="modal-content" id="modalImage" alt="Image agrandie du cabinet" width="1642" height="1094">
     </div>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 
     <footer>
         <div class="footer-content">
