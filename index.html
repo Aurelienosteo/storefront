@@ -14,14 +14,14 @@
     <meta property="og:url" content="https://www.osteopathe-caen-sabouret.fr/">
     <meta property="og:title" content="Aurélien Sabouret | Ostéopathe D.O. à Caen">
     <meta property="og:description" content="Ostéopathe diplômé à Caen, spécialiste en douleurs dorsales et suivi sportif. Prenez rendez-vous au 06.95.99.14.33">
-    <meta property="og:image" content="https://www.osteopathe-caen-sabouret.fr/images/aurel.webp">
+    <meta property="og:image" content="https://www.osteopathe-caen-sabouret.fr/aurel.webp">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.osteopathe-caen-sabouret.fr/">
     <meta property="twitter:title" content="Aurélien Sabouret | Ostéopathe D.O. à Caen">
     <meta property="twitter:description" content="Ostéopathe diplômé à Caen, spécialiste en douleurs dorsales et suivi sportif. Prenez rendez-vous au 06.95.99.14.33">
-    <meta property="twitter:image" content="https://www.osteopathe-caen-sabouret.fr/images/aurel.webp">
+    <meta property="twitter:image" content="https://www.osteopathe-caen-sabouret.fr/aurel.webp">
     
     <title>Aurélien Sabouret | Ostéopathe D.O. à Caen | Douleurs dorsales, Suivi sportif</title>
     
@@ -39,6 +39,12 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap">
     </noscript>
+
+    <!-- Version mobile -->
+    <link rel="preload" as="image" href="pexels-ryutaro-5473223-mobile.avif" type="image/avif" media="(max-width: 768px)">
+
+    <!-- Version desktop -->
+    <link rel="preload" as="image" href="pexels-ryutaro-5473223.webp" type="image/webp" media="(min-width: 769px)">
     
 </head>
 <body>
@@ -48,7 +54,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Aurélien Sabouret - Ostéopathe D.O.",
-        "image": "https://www.osteopathe-caen-sabouret.fr/images/aurel.webp",
+        "image": "https://www.osteopathe-caen-sabouret.fr/aurel.webp",
         "@id": "https://www.osteopathe-caen-sabouret.fr",
         "url": "https://www.osteopathe-caen-sabouret.fr",
         "telephone": "06.95.99.14.33",
@@ -96,27 +102,12 @@
     <main>
         <section class="hero">
             <picture>
-                <source 
-                    media="(max-width: 768px)"
-                    srcset="pexels-ryutaro-5473223-mobile.webp"
-                    type="image/webp"
-                    width="788"
-                    height="525"
-                    loading="lazy">
-                <source 
-                    media="(min-width: 769px)"
-                    srcset="pexels-ryutaro-5473223.webp"
-                    type="image/webp"
-                    width="1642"
-                    height="1094"
-                    loading="lazy">
-                <img 
-                    src="placeholder.svg"
-                    alt="Cabinet d'ostéopathie à Caen"
-                    class="hero-image"
-                    width="1642"
-                    height="1094"
-                    loading="lazy">
+                <source media="(max-width: 768px)" srcset="pexels-ryutaro-5473223-mobile.avif" type="image/avif">
+                <source media="(max-width: 768px)" srcset="pexels-ryutaro-5473223-mobile.webp" type="image/webp">
+                
+                <source media="(min-width: 769px)" srcset="pexels-ryutaro-5473223.webp" type="image/webp">
+                
+                <img src="pexels-ryutaro-5473223.webp" alt="Cabinet d'ostéopathie à Caen" width="788" height="525" class="hero-image" decoding="auto">
             </picture>
             <div class="container hero-content">
                 <h1>Ostéopathe à Caen</h1>
