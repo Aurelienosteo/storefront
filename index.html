@@ -40,9 +40,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;500;600&display=swap">
     </noscript>
     
-    <!-- Preload hero image -->
-    <link rel="preload" as="image" href="pexels-ryutaro-5473223-mobile.webp" media="(max-width: 768px)" type="image/webp">
-    <link rel="preload" as="image" href="pexels-ryutaro-5473223.webp" media="(min-width: 769px)" type="image/webp">
 </head>
 <body>
     <!-- Schema.org structured data -->
@@ -99,26 +96,27 @@
     <main>
         <section class="hero">
             <picture>
-                <source
+                <source 
                     media="(max-width: 768px)"
-                    srcset="pexels-ryutaro-5473223-mobile.webp 788w"
+                    srcset="pexels-ryutaro-5473223-mobile.webp"
                     type="image/webp"
                     width="788"
-                    height="525">
-                <source
+                    height="525"
+                    loading="lazy">
+                <source 
                     media="(min-width: 769px)"
-                    srcset="pexels-ryutaro-5473223.webp 1642w"
+                    srcset="pexels-ryutaro-5473223.webp"
                     type="image/webp"
                     width="1642"
-                    height="1094">
+                    height="1094"
+                    loading="lazy">
                 <img 
-                    src="pexels-ryutaro-5473223.webp" 
-                    alt="Cabinet d'ostéopathie à Caen" 
-                    class="hero-image" 
-                    width="1642" 
-                    height="1094" 
-                    loading="eager"
-                    fetchpriority="high">
+                    src="placeholder.svg"
+                    alt="Cabinet d'ostéopathie à Caen"
+                    class="hero-image"
+                    width="1642"
+                    height="1094"
+                    loading="lazy">
             </picture>
             <div class="container hero-content">
                 <h1>Ostéopathe à Caen</h1>
@@ -257,7 +255,7 @@
     <!-- Modal pour l'image agrandie -->
     <div class="modal" id="imageModal">
         <button class="close-modal" onclick="closeModal()" aria-label="Fermer l'image">&times;</button>
-        <img class="modal-content" id="modalImage" alt="Image agrandie du cabinet">
+        <img class="modal-content" id="modalImage" alt="Image agrandie du cabinet" width="1642" height="1094">
     </div>
 
     <script src="main.js"></script>
