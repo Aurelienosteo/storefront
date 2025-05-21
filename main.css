@@ -457,6 +457,12 @@ footer {
     text-align: center;
 }
 
+.siret {
+    user-select: text;
+    -webkit-user-select: text;
+    -webkit-touch-callout: none; /* désactive les actions type appel */
+}
+
 .footer-content {
     max-width: var(--max-width);
     margin: 0 auto;
